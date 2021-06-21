@@ -1,0 +1,645 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ChembyHub = Instance.new("ScreenGui")
+local Background = Instance.new("ImageLabel")
+local Categories = Instance.new("ImageLabel")
+local Hubs = Instance.new("TextButton")
+local GameScripts = Instance.new("TextButton")
+local Miscellanous = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local About = Instance.new("TextButton")
+local Layers = Instance.new("Frame")
+local HubsLayer = Instance.new("ScrollingFrame")
+local EzHub = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local TrollingGui = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local GameScriptsLayer = Instance.new("ScrollingFrame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local RagdollEngine = Instance.new("TextButton")
+local Jailbreak = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
+local DaHood = Instance.new("TextButton")
+local MurderMystery2 = Instance.new("TextButton")
+local FunkyFriday = Instance.new("TextButton")
+local ProjectLazarus = Instance.new("TextButton")
+local BuildABoatForTreasure = Instance.new("TextButton")
+local TowerOfHell = Instance.new("TextButton")
+local MiscellanousLayer = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local FEBang = Instance.new("TextButton")
+local AntiAFK = Instance.new("TextButton")
+local R15Emotes = Instance.new("TextButton")
+local Fly = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local ChatSpy = Instance.new("TextButton")
+local Settings_2 = Instance.new("Frame")
+local DestroyGui = Instance.new("TextButton")
+local Black = Instance.new("TextButton")
+local White = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local About_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ChembyHub.Name = "ChembyHub"
+ChembyHub.Parent = game.CoreGui
+
+Background.Name = "Background"
+Background.Parent = ChembyHub
+Background.Active = true
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.0173775647, 0, 0.578667343, 0)
+Background.Size = UDim2.new(0.400000006, 0, 0.400000006, 0)
+Background.Image = "rbxassetid://3570695787"
+Background.ImageColor3 = Color3.fromRGB(16, 16, 16)
+Background.ImageTransparency = 0.050
+Background.ScaleType = Enum.ScaleType.Slice
+Background.SliceCenter = Rect.new(100, 100, 100, 100)
+Background.SliceScale = 0.050
+Background.Active = true
+Background.Draggable = true
+
+Categories.Name = "Categories"
+Categories.Parent = Background
+Categories.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Categories.BackgroundTransparency = 1.000
+Categories.Size = UDim2.new(0.25, 0, 1, 0)
+Categories.Image = "rbxassetid://3570695787"
+Categories.ImageColor3 = Color3.fromRGB(176, 176, 176)
+Categories.ImageTransparency = 0.850
+Categories.ScaleType = Enum.ScaleType.Slice
+Categories.SliceCenter = Rect.new(100, 100, 100, 100)
+Categories.SliceScale = 0.050
+
+Hubs.Name = "Hubs"
+Hubs.Parent = Categories
+Hubs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hubs.BackgroundTransparency = 1.000
+Hubs.Size = UDim2.new(1, 0, 0.200000003, 0)
+Hubs.Font = Enum.Font.Roboto
+Hubs.Text = "Hubs"
+Hubs.TextColor3 = Color3.fromRGB(250, 250, 250)
+Hubs.TextSize = 24.000
+Hubs.TextWrapped = true
+Hubs.MouseButton1Click:Connect(function()
+	About_2.Visible = false
+	Settings_2.Visible = false
+	MiscellanousLayer.Visible = false
+	HubsLayer.Visible = true
+	GameScriptsLayer.Visible = false
+	About_2.Active = false
+	Settings_2.Active = false
+	MiscellanousLayer.Active = false
+	HubsLayer.Active = true
+	GameScriptsLayer.Active = false
+end)
+
+GameScripts.Name = "GameScripts"
+GameScripts.Parent = Categories
+GameScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameScripts.BackgroundTransparency = 1.000
+GameScripts.Position = UDim2.new(0, 0, 0.200000003, 0)
+GameScripts.Size = UDim2.new(1, 0, 0.200000003, 0)
+GameScripts.Font = Enum.Font.Roboto
+GameScripts.Text = "Game Scripts"
+GameScripts.TextColor3 = Color3.fromRGB(250, 250, 250)
+GameScripts.TextSize = 20.000
+GameScripts.TextWrapped = true
+
+GameScripts.MouseButton1Click:Connect(function()
+	About_2.Visible = false
+	Settings_2.Visible = false
+	MiscellanousLayer.Visible = false
+	HubsLayer.Visible = false
+	GameScriptsLayer.Visible = true
+	About_2.Active = false
+	Settings_2.Active = false
+	MiscellanousLayer.Active = false
+	HubsLayer.Active = false
+	GameScriptsLayer.Active = true
+end)
+
+Miscellanous.Name = "Miscellanous"
+Miscellanous.Parent = Categories
+Miscellanous.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Miscellanous.BackgroundTransparency = 1.000
+Miscellanous.Position = UDim2.new(0, 0, 0.400000006, 0)
+Miscellanous.Size = UDim2.new(1, 0, 0.200000003, 0)
+Miscellanous.Font = Enum.Font.Roboto
+Miscellanous.Text = "Miscellanous"
+Miscellanous.TextColor3 = Color3.fromRGB(250, 250, 250)
+Miscellanous.TextSize = 20.000
+Miscellanous.TextWrapped = true
+
+Miscellanous.MouseButton1Click:Connect(function()
+	About_2.Visible = false
+	Settings_2.Visible = false
+	MiscellanousLayer.Visible = true
+	HubsLayer.Visible = false
+	GameScriptsLayer.Visible = false
+	About_2.Active = false
+	Settings_2.Active = false
+	MiscellanousLayer.Active = true
+	HubsLayer.Active = false
+	GameScriptsLayer.Active = false
+end)
+
+Settings.Name = "Settings"
+Settings.Parent = Categories
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0, 0, 0.600000024, 0)
+Settings.Size = UDim2.new(1, 0, 0.200000003, 0)
+Settings.Font = Enum.Font.Roboto
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(250, 250, 250)
+Settings.TextSize = 20.000
+Settings.TextWrapped = true
+
+Settings.MouseButton1Click:Connect(function()
+	About_2.Visible = false
+	Settings_2.Visible = true
+	MiscellanousLayer.Visible = false
+	HubsLayer.Visible = false
+	GameScriptsLayer.Visible = false
+	About_2.Active = false
+	Settings_2.Active = true
+	MiscellanousLayer.Active = false
+	HubsLayer.Active = false
+	GameScriptsLayer.Active = false
+end)
+
+About.Name = "About"
+About.Parent = Categories
+About.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+About.BackgroundTransparency = 1.000
+About.Position = UDim2.new(0, 0, 0.800000012, 0)
+About.Size = UDim2.new(1, 0, 0.200000003, 0)
+About.Font = Enum.Font.Roboto
+About.Text = "About"
+About.TextColor3 = Color3.fromRGB(250, 250, 250)
+About.TextSize = 20.000
+About.TextWrapped = true
+
+Settings.MouseButton1Click:Connect(function()
+	About_2.Visible = true
+	Settings_2.Visible = false
+	MiscellanousLayer.Visible = false
+	HubsLayer.Visible = false
+	GameScriptsLayer.Visible = false
+	About_2.Active = true
+	Settings_2.Active = false
+	MiscellanousLayer.Active = false
+	HubsLayer.Active = false
+	GameScriptsLayer.Active = false
+end)
+
+Layers.Name = "Layers"
+Layers.Parent = Background
+Layers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Layers.BackgroundTransparency = 1.000
+Layers.Position = UDim2.new(0.248815194, 0, 0, 0)
+Layers.Size = UDim2.new(0.75, 0, 1, 0)
+
+HubsLayer.Name = "HubsLayer"
+HubsLayer.Parent = Layers
+HubsLayer.Active = true
+HubsLayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HubsLayer.BackgroundTransparency = 1.000
+HubsLayer.Position = UDim2.new(0.00157979492, 0, -0.00401284127, 0)
+HubsLayer.Size = UDim2.new(0.999999821, 0, 1, 0)
+HubsLayer.Visible = false
+
+EzHub.Name = "EzHub"
+EzHub.Parent = HubsLayer
+EzHub.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+EzHub.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+EzHub.Size = UDim2.new(0.800000012, 0, 0, 45)
+EzHub.Font = Enum.Font.Roboto
+EzHub.Text = "Ez Hub"
+EzHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+EzHub.TextScaled = true
+EzHub.TextSize = 14.000
+EzHub.TextWrapped = true
+
+EzHub.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+UIListLayout.Parent = HubsLayer
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 10)
+
+TrollingGui.Name = "TrollingGui"
+TrollingGui.Parent = HubsLayer
+TrollingGui.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TrollingGui.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+TrollingGui.Size = UDim2.new(0.800000012, 0, 0, 45)
+TrollingGui.Font = Enum.Font.Roboto
+TrollingGui.Text = "Trolling GUI"
+TrollingGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrollingGui.TextScaled = true
+TrollingGui.TextSize = 14.000
+TrollingGui.TextWrapped = true
+
+TrollingGui.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/RNWgaqCE", true))()
+end)
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = HubsLayer
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+InfiniteYield.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+InfiniteYield.Size = UDim2.new(0.800000012, 0, 0, 45)
+InfiniteYield.Font = Enum.Font.Roboto
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+
+InfiniteYield.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+GameScriptsLayer.Name = "GameScriptsLayer"
+GameScriptsLayer.Parent = Layers
+GameScriptsLayer.Active = true
+GameScriptsLayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameScriptsLayer.BackgroundTransparency = 1.000
+GameScriptsLayer.Position = UDim2.new(0.00157979492, 0, -0.00401284127, 0)
+GameScriptsLayer.Size = UDim2.new(0.999999821, 0, 1, 0)
+GameScriptsLayer.Visible = false
+GameScriptsLayer.CanvasPosition = Vector2.new(0, 108.400009)
+
+UIListLayout_2.Parent = GameScriptsLayer
+UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 10)
+
+RagdollEngine.Name = "RagdollEngine"
+RagdollEngine.Parent = GameScriptsLayer
+RagdollEngine.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+RagdollEngine.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+RagdollEngine.Size = UDim2.new(0.800000012, 0, 0, 45)
+RagdollEngine.Font = Enum.Font.Roboto
+RagdollEngine.Text = "Ragdoll Engine"
+RagdollEngine.TextColor3 = Color3.fromRGB(255, 255, 255)
+RagdollEngine.TextScaled = true
+RagdollEngine.TextSize = 14.000
+RagdollEngine.TextWrapped = true
+
+RagdollEngine.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/jdSTzqP8"),true)
+end)
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = GameScriptsLayer
+Jailbreak.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Jailbreak.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+Jailbreak.Size = UDim2.new(0.800000012, 0, 0, 45)
+Jailbreak.Font = Enum.Font.Roboto
+Jailbreak.Text = "Jailbreak Autofarm"
+Jailbreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+Jailbreak.TextScaled = true
+Jailbreak.TextSize = 14.000
+Jailbreak.TextWrapped = true
+
+Jailbreak.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/alohabeach/Main/master/Scripts/Main.lua"))()
+end)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = GameScriptsLayer
+Arsenal.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Arsenal.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+Arsenal.Size = UDim2.new(0.800000012, 0, 0, 45)
+Arsenal.Font = Enum.Font.Roboto
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.TextScaled = true
+Arsenal.TextSize = 14.000
+Arsenal.TextWrapped = true
+
+Arsenal.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/fusiongreg/BoltsHubV3/main/BoltsHubv3"),true))()
+end)
+
+
+DaHood.Name = "DaHood"
+DaHood.Parent = GameScriptsLayer
+DaHood.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+DaHood.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+DaHood.Size = UDim2.new(0.800000012, 0, 0, 45)
+DaHood.Font = Enum.Font.Roboto
+DaHood.Text = "Da Hood"
+DaHood.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaHood.TextScaled = true
+DaHood.TextSize = 14.000
+DaHood.TextWrapped = true
+
+DaHood.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+MurderMystery2.Name = "MurderMystery2"
+MurderMystery2.Parent = GameScriptsLayer
+MurderMystery2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+MurderMystery2.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+MurderMystery2.Size = UDim2.new(0.800000012, 0, 0, 45)
+MurderMystery2.Font = Enum.Font.Roboto
+MurderMystery2.Text = "Murder Mystery 2"
+MurderMystery2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MurderMystery2.TextScaled = true
+MurderMystery2.TextSize = 14.000
+MurderMystery2.TextWrapped = true
+
+MurderMystery2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+end)
+
+FunkyFriday.Name = "FunkyFriday"
+FunkyFriday.Parent = GameScriptsLayer
+FunkyFriday.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+FunkyFriday.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+FunkyFriday.Size = UDim2.new(0.800000012, 0, 0, 45)
+FunkyFriday.Font = Enum.Font.Roboto
+FunkyFriday.Text = "Funky Friday Autoplay"
+FunkyFriday.TextColor3 = Color3.fromRGB(255, 255, 255)
+FunkyFriday.TextScaled = true
+FunkyFriday.TextSize = 14.000
+FunkyFriday.TextWrapped = true
+
+FunkyFriday.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/F9m2u5e7'))()
+end)
+
+ProjectLazarus.Name = "ProjectLazarus"
+ProjectLazarus.Parent = GameScriptsLayer
+ProjectLazarus.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ProjectLazarus.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+ProjectLazarus.Size = UDim2.new(0.800000012, 0, 0, 45)
+ProjectLazarus.Font = Enum.Font.Roboto
+ProjectLazarus.Text = "Project Lazarus"
+ProjectLazarus.TextColor3 = Color3.fromRGB(255, 255, 255)
+ProjectLazarus.TextScaled = true
+ProjectLazarus.TextSize = 14.000
+ProjectLazarus.TextWrapped = true
+
+ProjectLazarus.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet(('https://genesisexploits.com/wp-content/uploads/2021/05/project-lazarus.txt')))()
+end)
+
+BuildABoatForTreasure.Name = "BuildABoatForTreasure"
+BuildABoatForTreasure.Parent = GameScriptsLayer
+BuildABoatForTreasure.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+BuildABoatForTreasure.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+BuildABoatForTreasure.Size = UDim2.new(0.800000012, 0, 0, 45)
+BuildABoatForTreasure.Font = Enum.Font.Roboto
+BuildABoatForTreasure.Text = "Build A Boat For Treasure"
+BuildABoatForTreasure.TextColor3 = Color3.fromRGB(255, 255, 255)
+BuildABoatForTreasure.TextScaled = true
+BuildABoatForTreasure.TextSize = 14.000
+BuildABoatForTreasure.TextWrapped = true
+
+BuildABoatForTreasure.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Toxic-Mods/Kupcake.Hub/main/Loader", true))()
+end)
+
+TowerOfHell.Name = "TowerOfHell"
+TowerOfHell.Parent = GameScriptsLayer
+TowerOfHell.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TowerOfHell.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+TowerOfHell.Size = UDim2.new(0.800000012, 0, 0, 45)
+TowerOfHell.Font = Enum.Font.Roboto
+TowerOfHell.Text = "Tower Of Hell"
+TowerOfHell.TextColor3 = Color3.fromRGB(255, 255, 255)
+TowerOfHell.TextScaled = true
+TowerOfHell.TextSize = 14.000
+TowerOfHell.TextWrapped = true
+
+TowerOfHell.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/BloxHub-v2/main/Main"))()
+end)
+
+MiscellanousLayer.Name = "MiscellanousLayer"
+MiscellanousLayer.Parent = Layers
+MiscellanousLayer.Active = true
+MiscellanousLayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscellanousLayer.BackgroundTransparency = 1.000
+MiscellanousLayer.Position = UDim2.new(0.00157979492, 0, -0.00401284127, 0)
+MiscellanousLayer.Size = UDim2.new(0.999999821, 0, 1, 0)
+MiscellanousLayer.Visible = false
+
+UIListLayout_3.Parent = MiscellanousLayer
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 10)
+
+FEBang.Name = "FEBang"
+FEBang.Parent = MiscellanousLayer
+FEBang.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+FEBang.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+FEBang.Size = UDim2.new(0.800000012, 0, 0, 45)
+FEBang.Font = Enum.Font.Roboto
+FEBang.Text = "FE Bang ;)"
+FEBang.TextColor3 = Color3.fromRGB(255, 255, 255)
+FEBang.TextScaled = true
+FEBang.TextSize = 14.000
+FEBang.TextWrapped = true
+
+FEBang.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/6Uy22Jfs", true))()
+end)
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = MiscellanousLayer
+AntiAFK.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+AntiAFK.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+AntiAFK.Size = UDim2.new(0.800000012, 0, 0, 45)
+AntiAFK.Font = Enum.Font.Roboto
+AntiAFK.Text = "Anti AFK"
+AntiAFK.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.TextScaled = true
+AntiAFK.TextSize = 14.000
+AntiAFK.TextWrapped = true
+
+AntiAFK.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
+
+
+R15Emotes.Name = "R15Emotes"
+R15Emotes.Parent = MiscellanousLayer
+R15Emotes.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+R15Emotes.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+R15Emotes.Size = UDim2.new(0.800000012, 0, 0, 45)
+R15Emotes.Font = Enum.Font.Roboto
+R15Emotes.Text = "R15 Emotes"
+R15Emotes.TextColor3 = Color3.fromRGB(255, 255, 255)
+R15Emotes.TextScaled = true
+R15Emotes.TextSize = 14.000
+R15Emotes.TextWrapped = true
+
+R15Emotes.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/cZND8vC9'))()
+end)
+
+Fly.Name = "Fly"
+Fly.Parent = MiscellanousLayer
+Fly.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Fly.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+Fly.Size = UDim2.new(0.800000012, 0, 0, 45)
+Fly.Font = Enum.Font.Roboto
+Fly.Text = "Fly (X to toggle)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+Fly.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/b0kwzrUX'))()
+end)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = MiscellanousLayer
+Noclip.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Noclip.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+Noclip.Size = UDim2.new(0.800000012, 0, 0, 45)
+Noclip.Font = Enum.Font.Roboto
+Noclip.Text = "Noclip (E to toggle)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+Noclip.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/XAbWSYnC'))()
+end)
+
+ChatSpy.Name = "ChatSpy"
+ChatSpy.Parent = MiscellanousLayer
+ChatSpy.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ChatSpy.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+ChatSpy.Size = UDim2.new(0.800000012, 0, 0, 45)
+ChatSpy.Font = Enum.Font.Roboto
+ChatSpy.Text = "Chat Spy"
+ChatSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpy.TextScaled = true
+ChatSpy.TextSize = 14.000
+ChatSpy.TextWrapped = true
+
+ChatSpy.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/gbiCjUXq'))()
+end)
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Layers
+Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BackgroundTransparency = 1.000
+Settings_2.Size = UDim2.new(1, 0, 1, 0)
+Settings_2.Visible = false
+
+DestroyGui.Name = "DestroyGui"
+DestroyGui.Parent = Settings_2
+DestroyGui.AnchorPoint = Vector2.new(0.5, 0.5)
+DestroyGui.BackgroundColor3 = Color3.fromRGB(113, 12, 14)
+DestroyGui.Position = UDim2.new(0.502632976, 0, 0.812476695, 0)
+DestroyGui.Size = UDim2.new(0.5, 0, 0.150000006, 0)
+DestroyGui.Font = Enum.Font.SourceSans
+DestroyGui.Text = "Destroy Gui"
+DestroyGui.TextColor3 = Color3.fromRGB(249, 249, 249)
+DestroyGui.TextScaled = true
+DestroyGui.TextSize = 14.000
+DestroyGui.TextWrapped = true
+
+DestroyGui.MouseButton1Click:Connect(function()
+	ChembyHub:Destroy()
+end)
+
+Black.Name = "Black"
+Black.Parent = Settings_2
+Black.AnchorPoint = Vector2.new(0.5, 0.5)
+Black.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Black.Position = UDim2.new(0.252632976, 0, 0.47573033, 0)
+Black.Size = UDim2.new(0.300000012, 0, 0.159999996, 0)
+Black.Font = Enum.Font.SourceSans
+Black.Text = "Black"
+Black.TextColor3 = Color3.fromRGB(249, 249, 249)
+Black.TextScaled = true
+Black.TextSize = 14.000
+Black.TextWrapped = true
+
+Black.MouseButton1Click:Connect(function()
+	Background.ImageColor3 = Color3.fromRGB(17, 17, 17)
+end)
+
+White.Name = "White"
+White.Parent = Settings_2
+White.AnchorPoint = Vector2.new(0.5, 0.5)
+White.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+White.Position = UDim2.new(0.752632976, 0, 0.47573033, 0)
+White.Size = UDim2.new(0.300000012, 0, 0.159999996, 0)
+White.Font = Enum.Font.SourceSans
+White.Text = "White"
+White.TextColor3 = Color3.fromRGB(0, 0, 0)
+White.TextScaled = true
+White.TextSize = 14.000
+White.TextWrapped = true
+
+White.MouseButton1Click:Connect(function()
+	Background.ImageColor3 = Color3.fromRGB(47, 47, 47)
+end)
+
+TextLabel.Parent = Settings_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.236966833, 0, 0.112359561, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Background Color:"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+About_2.Name = "About"
+About_2.Parent = Layers
+About_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+About_2.BackgroundTransparency = 1.000
+About_2.Size = UDim2.new(1, 0, 1, 0)
+
+TextLabel_2.Parent = About_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(1, 0, 0.200000003, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Welcome to ChembyHub!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = About_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.25, 0, 0.200000003, 0)
+TextLabel_3.Size = UDim2.new(0.5, 0, 0.800000012, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "I don't really know what to say here, but I hope you will like my hub :)"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 30.000
+TextLabel_3.TextWrapped = true
