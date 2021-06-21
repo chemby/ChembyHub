@@ -55,7 +55,7 @@ local RoBeatsAutoplay = Instance.new("TextButton")
 --Properties:
 
 ChembyHub.Name = "ChembyHub"
-ChembyHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ChembyHub.Parent = game.CoreGui
 
 Background.Name = "Background"
 Background.Parent = ChembyHub
