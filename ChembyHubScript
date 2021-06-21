@@ -50,6 +50,7 @@ local KeyBind = Instance.new("TextButton")
 local About_2 = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
+local RoBeatsAutoplay = Instance.new("TextButton")
 
 --Properties:
 
@@ -378,7 +379,7 @@ Fly.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 Fly.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
 Fly.Size = UDim2.new(0.800000012, 0, 0, 45)
 Fly.Font = Enum.Font.Roboto
-Fly.Text = "Fly (X to toggle)"
+Fly.Text = "Fly"
 Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
@@ -390,7 +391,7 @@ Noclip.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 Noclip.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
 Noclip.Size = UDim2.new(0.800000012, 0, 0, 45)
 Noclip.Font = Enum.Font.Roboto
-Noclip.Text = "Noclip (E to toggle)"
+Noclip.Text = "Noclip"
 Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
 Noclip.TextScaled = true
 Noclip.TextSize = 14.000
@@ -519,6 +520,18 @@ TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 30.000
 TextLabel_4.TextWrapped = true
 
+RoBeatsAutoplay.Name = "RoBeatsAutoplay"
+RoBeatsAutoplay.Parent = game.StarterGui.ChembyHub.Background.Layers.GameScriptsLayer
+RoBeatsAutoplay.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+RoBeatsAutoplay.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
+RoBeatsAutoplay.Size = UDim2.new(0.800000012, 0, 0, 45)
+RoBeatsAutoplay.Font = Enum.Font.Roboto
+RoBeatsAutoplay.Text = "RoBeats Autoplay"
+RoBeatsAutoplay.TextColor3 = Color3.fromRGB(255, 255, 255)
+RoBeatsAutoplay.TextScaled = true
+RoBeatsAutoplay.TextSize = 14.000
+RoBeatsAutoplay.TextWrapped = true
+
 --Scripts
 
 UserInputService.InputEnded:Connect(function(input)
@@ -644,6 +657,10 @@ end)
 
 TowerOfHell.MouseButton1Click:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/BloxHub-v2/main/Main"))()
+end)
+
+RoBeatsAutoplay.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/notclosure/new-years/main/happ.lua"))()
 end)
 
 FEBang.MouseButton1Click:Connect(function()
