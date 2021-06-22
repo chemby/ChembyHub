@@ -521,7 +521,7 @@ TextLabel_4.TextSize = 30.000
 TextLabel_4.TextWrapped = true
 
 RoBeatsAutoplay.Name = "RoBeatsAutoplay"
-RoBeatsAutoplay.Parent = game.StarterGui.ChembyHub.Background.Layers.GameScriptsLayer
+RoBeatsAutoplay.Parent = GameScriptsLayer
 RoBeatsAutoplay.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
 RoBeatsAutoplay.Position = UDim2.new(4.14866506e-08, 0, 0, 0)
 RoBeatsAutoplay.Size = UDim2.new(0.800000012, 0, 0, 45)
